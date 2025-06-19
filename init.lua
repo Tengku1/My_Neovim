@@ -35,6 +35,7 @@ require("lazy").setup({
 	require("plugins.dashboard"),
 	require("plugins.noice"),
 	require("plugins.neoscroll"),
+	require("plugins.toggleterm"),
 })
 
 vim.cmd([[colorscheme tokyonight-night]])
