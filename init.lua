@@ -23,7 +23,6 @@ require("lazy").setup({
 	require("plugins.telescope"),
 	require("plugins.lsp"),
 	require("plugins.neominimap"),
-	--require("plugins.bufdel"),
 	require("plugins.autocompletion"),
 	require("plugins.none-ls"),
 	--require("plugins.alpha"),

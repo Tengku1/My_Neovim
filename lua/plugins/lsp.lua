@@ -234,7 +234,23 @@ return {
 			},
 			html = { filetypes = { "html", "twig", "hbs" } },
 			cssls = {},
-			tailwindcss = {},
+			tailwindcss = {
+				filetypes = {
+					"html",
+					"css",
+					"scss",
+					"javascript",
+					"javascriptreact",
+					"typescriptreact",
+					"tsx",
+				},
+				init_options = {
+					userLanguages = {
+						typescript = "javascript",
+						typescriptreact = "javascriptreact",
+					},
+				},
+			},
 			dockerls = {},
 			sqlls = {},
 			terraformls = {},
