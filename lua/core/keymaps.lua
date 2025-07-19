@@ -49,7 +49,15 @@ vim.keymap.set("n", "<leader>x", function()
 	else
 		vim.cmd("bd")
 	end
-end, opts)                                                -- close buffer
+end, opts) -- close buffer
+vim.keymap.set("n", "<leader>X", function()
+	local buffers = vim.fn.getbufinfo({ buflisted = 1 })
+	if #buffers > 1 then
+		vim.cmd("bp! | bd! #")
+	else
+		vim.cmd("bd!")
+	end
+end, opts)                                                -- close buffer without saving
 vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts) -- new buffer
 
 -- Window management
