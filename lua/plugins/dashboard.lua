@@ -46,6 +46,18 @@ return {
 						action = "edit ~/.config/nvim/init.lua",
 					},
 					{
+						icon = "󰒲 ", -- Ikon baru (gear 3, atau kamu bisa pilih lainnya)
+						desc = "Lazy",
+						key = "l",
+						action = ":Lazy",
+					},
+					{
+						icon = " ", -- Ikon untuk tools/packages
+						desc = "Mason",
+						key = "m",
+						action = ":Mason",
+					},
+					{
 						icon = "  ",
 						desc = "Quit",
 						key = "q",
