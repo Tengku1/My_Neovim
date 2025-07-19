@@ -1,10 +1,9 @@
 <h1>My neovim setup progress</h1>
 
 
-<h3><b>Welcome Page (Alpha.nvim)</b></h3>
-
-![image](https://github.com/user-attachments/assets/b389a80b-13f1-4d3f-843a-1974e8250d7a)
+<h3><b>Welcome Page (Dashboard.nvim)</b></h3>
+<img width="995" height="604" alt="image" src="https://github.com/user-attachments/assets/55e49fe3-5558-4723-83c9-f69d13757ce6" />
 
 <h3><b>Ui</b></h3>
+<img width="1912" height="1049" alt="image" src="https://github.com/user-attachments/assets/a4bb4181-e021-4d73-bc6d-6d0805c68a8e" />
 
-![image](https://github.com/user-attachments/assets/ddef0d5b-2fc8-4075-aba0-8032f3b4d0ee)
