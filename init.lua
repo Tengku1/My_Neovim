@@ -38,7 +38,7 @@ require("lazy").setup({
 })
 
 vim.cmd([[colorscheme tokyonight-night]])
---vim.cmd 'colorscheme material'
+--vim.cmd("colorscheme material")
 vim.cmd([[
   highlight EndOfBuffer guibg=NONE ctermbg=NONE
   set fillchars+=eob:\

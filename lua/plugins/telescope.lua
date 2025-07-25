@@ -20,7 +20,7 @@ return {
 		{ "nvim-telescope/telescope-ui-select.nvim" },
 
 		-- Useful for getting pretty icons, but requires a Nerd Font.
-		{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
+		{ "nvim-tree/nvim-web-devicons",            enabled = vim.g.have_nerd_font },
 		{ "nvim-pack/nvim-spectre" },
 	},
 	config = function()
@@ -76,6 +76,9 @@ return {
 				project = {
 					base_dirs = {
 						{
+							"~/.config/",
+						},
+						{
 							"~/Projects",
 							max_depth = 2,
 						},
@@ -107,6 +110,13 @@ return {
 		vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
 		vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "[S]earch [R]esume" })
 		vim.keymap.set("n", "<leader>s.", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
+		vim.api.nvim_set_keymap(
+			"n",
+			"<C-p>",
+			":lua require'telescope'.extensions.project.project{}<CR>",
+			{ noremap = true, silent = true }
+		)
+
 		-- Replace in files
 		vim.keymap.set("n", "<leader>sr", function()
 			require("spectre").open()
@@ -120,7 +130,12 @@ return {
 			require("spectre").open_file_search({ select_word = true })
 		end, { desc = "[S]pectre Replace in current [P]age/file" })
 
-		--vim.keymap.set('n', '<leader>t', ':lua require("material.functions").find_style()<CR>', { desc = '[C]hange Theme'})
+		vim.keymap.set(
+			"n",
+			"<leader>t",
+			':lua require("material.functions").find_style()<CR>',
+			{ desc = "[C]hange Theme" }
+		)
 		vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
 
 		-- Slightly advanced example of overriding default behavior and theme
